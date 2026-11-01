@@ -117,7 +117,7 @@ button:focus-visible, select:focus-visible, #tl:focus-visible { outline: 2px sol
 footer { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 18px 36px; color: var(--ink-2); font-size: 14px; margin-top: 8px; }
 footer section { min-width: 0; }
 /* Encabezado de sección con la línea turquesa y el pico, como en ecuavisa.com */
-footer h2 { position: relative; margin: 0 0 14px; padding-bottom: 8px; font: 700 26px/1.1 var(--font-display); color: var(--brand); text-transform: lowercase; border-bottom: 2px solid var(--teal); }
+footer h2 { position: relative; margin: 0 0 14px; padding-bottom: 8px; font: 700 26px/1.1 var(--font-display); color: var(--brand); border-bottom: 2px solid var(--teal); }
 footer h2::after { content: ""; position: absolute; left: 22px; bottom: -9px; width: 12px; height: 12px; background: var(--bg); border-right: 2px solid var(--teal); border-bottom: 2px solid var(--teal); transform: rotate(45deg); }
 footer p { margin: 0 0 10px; max-width: 68ch; text-wrap: pretty; }
 footer .upd { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted); margin: 0; }
@@ -218,12 +218,12 @@ footer .upd { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted); margi
   <footer>
     <section>
       <h2>Qué mide el satélite</h2>
-      <p>El Mapeador Geoestacionario de Rayos (GLM) es una cámara que capta la luz de las descargas, no la electricidad. Registra la actividad eléctrica total de una tormenta, dentro de la nube, entre nubes y de nube a tierra, y por sí solo no distingue los rayos que tocan el suelo.</p>
-      <p>Cada destello reúne los pulsos de luz que ocurren en menos de un tercio de segundo y a pocos kilómetros entre sí. La ubicación tiene un margen de 8 a 14 km, así que el mapa muestra dónde se concentran las tormentas y no el punto exacto de un impacto.</p>
+      <p>El satélite GOES-19 lleva una cámara, el Mapeador Geoestacionario de Rayos (GLM), que detecta los destellos de luz de las descargas eléctricas en una tormenta. Registra tanto las descargas que ocurren dentro de las nubes como las que llegan al suelo, pero no las distingue entre sí.</p>
+      <p>Cada destello del mapa agrupa varios pulsos de luz muy seguidos y cercanos. Su ubicación tiene un margen de 8 a 14 km, por eso el mapa sirve para ver dónde se concentran las tormentas y no el lugar exacto donde cayó un rayo.</p>
     </section>
     <section>
       <h2>Datos</h2>
-      <p>Se muestran 758 603 destellos sin alertas de calidad, tomados de los archivos públicos de la NOAA. La hora corresponde a Ecuador continental (UTC-5); en Galápagos es una hora menos.</p>
+      <p>Se muestran 758 603 destellos, tomados de los archivos públicos de la NOAA. La hora corresponde a Ecuador continental (UTC-5); en Galápagos es una hora menos.</p>
       <p>Es una herramienta de visualización periodística y no una fuente oficial de alertas.</p>
     </section>
     <p class="upd">Datos hasta el 31 de octubre a las 23:59, hora de Ecuador continental.</p>
